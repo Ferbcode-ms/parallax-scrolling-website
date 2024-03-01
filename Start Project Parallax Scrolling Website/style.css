@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 100px;
+}
+
+header h2 {
+  font-size: 2em;
+  color: #359381;
+  margin-right: 10em;
+}
+
+nav a {
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+nav a:hover,
+nav a.active {
+  background-color: #359381;
+  color: #f9f9f9;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sec {
+  background: #003329;
+  padding: 100px;
+  position: relative;
+  top: 50px;
+}
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* animation section  */
+
+#text {
+  font-size: 5em;
+  color: #fff;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  animation: text linear;
+  animation-timeline: view();
+  transform: translateY(-300px);
+}
+@keyframes text {
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #359381;
+    transform: translateY(400px);
+  }
+}
+
+#hill1 {
+  animation: hill1 linear;
+  animation-timeline: view();
+  transform: translateY(-200px);
+}
+@keyframes hill1 {
+  100% {
+    transform: translateY(350px);
+  }
+}
+#hill2 {
+  animation: hill2 linear;
+  animation-timeline: view();
+  transform: translatex(200px);
+}
+@keyframes hill2 {
+  100% {
+    transform: translatex(-200px);
+  }
+}
+#hill3 {
+  animation: hill3 linear;
+  animation-timeline: view();
+  transform: translatex(-200px);
+}
+@keyframes hill3 {
+  100% {
+    transform: translatex(200px);
+  }
+}
+#leaf {
+  animation: leaf linear;
+  animation-timeline: view();
+  transform: translate(-250px,340px);
+}
+@keyframes leaf {
+  100% {
+    transform: translate(300px,-400px);
+  }
+}
+#tree {
+  animation: tree linear;
+  animation-timeline: view();
+  transform: translateY(-500px);
+}
+@keyframes tree {
+  100% {
+    transform: translateY(500px);
+  }
+}
+
+#hill4,#hill5 {
+  animation: plant linear;
+  animation-timeline: view();
+  transform: translateY(-400px);
+}
+@keyframes plant{
+  100% {
+    transform: translateY(300px);
+  }
+}
